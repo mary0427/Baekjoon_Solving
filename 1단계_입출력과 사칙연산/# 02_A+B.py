@@ -9,6 +9,8 @@ for i in l:
     result += int(i)
 print(result)
 
+
+
 # split 함수 : 문자열을 잘라 배열로 변환
 '''문자열.split()
 
