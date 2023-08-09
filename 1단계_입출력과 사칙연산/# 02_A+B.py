@@ -10,9 +10,10 @@ for i in l:
 print(result)
 
 
-
-# split 함수 : 문자열을 잘라 배열로 변환
-'''문자열.split()
+# split 함수 
+'''
+문자열을 잘라 배열로 변환
+문자열.split()
 
 문자열.split('구분자')
 
