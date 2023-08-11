@@ -1,5 +1,5 @@
 # 05_A/B
-# Baekjoon_10998
+# Baekjoon_1008
 # 작성자 : 이지현
 
 a,b =map(int,input().split())
