@@ -1,2 +1,6 @@
+# 05_A/B
+# Baekjoon_10998
+# 작성자 : 이지현
+
 a,b =map(int,input().split())
 print(a/b)
