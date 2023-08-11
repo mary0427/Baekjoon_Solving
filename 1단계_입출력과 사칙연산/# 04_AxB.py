@@ -1,5 +1,5 @@
 # 04_A*B
-# Baekjoon_1008
+# Baekjoon_10998
 # 작성자 : 이지현
 
 l = input().split(' ')
