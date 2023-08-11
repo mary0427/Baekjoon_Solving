@@ -1,0 +1,10 @@
+# 06_사칙연산
+# Baekjoon_10869
+# 작성자 : 이지현
+
+a,b = map(int,input().split())
+print(a+b)
+print(a-b)
+print(a*b)
+print(a//b)  #몫
+print(a%b)   #나머지
