@@ -1,0 +1,7 @@
+# 08_1998년생인 내가 태국에서는 2541년생?!
+# Baekjoon_18108
+# 작성자 : 이지현
+
+bul=int(input())
+seo=bul-543
+print(seo)
