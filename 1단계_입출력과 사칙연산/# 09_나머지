@@ -7,3 +7,7 @@ print((a+b)%c)
 print(((a%c)+(b%c))%c)
 print((a*b)%c)
 print(((a%c)*(b%c))%c)
+
+# print 
+콤마(,)로 구분해서 쓰면 띄워짐.
+플러스(+)로 구분해서 쓰면 붙여짐.
