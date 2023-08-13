@@ -9,6 +9,11 @@ for i in range(n):
     print(a+b)
 
 #best
+sum함수도 이용 sum(map(int,input().split()))
+
+# sys 모듈 
+: 파이썬 인터프리터를 제어하는데 사용되는 기본 모듈 중 하나.
+
 import sys
 input()
 for i in sys.stdin:
