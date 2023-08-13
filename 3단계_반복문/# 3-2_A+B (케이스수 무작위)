@@ -1,0 +1,16 @@
+# 3-2_A+B (케이스수 무작위)
+# Baekjoon_10950
+# 작성자 : 이지현
+
+n=int(input())
+for i in range(n):
+    a,b=0,0
+    a,b=map(int,input().split())
+    print(a+b)
+
+#best
+import sys
+input()
+for i in sys.stdin:
+    c = sum(map(int, i.split()))
+    print(c)
