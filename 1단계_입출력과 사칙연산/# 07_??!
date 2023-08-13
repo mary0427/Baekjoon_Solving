@@ -4,3 +4,6 @@
 
 d = input()
 print(f'{d}??!')
+
+# best
+print(input()+"??!")
