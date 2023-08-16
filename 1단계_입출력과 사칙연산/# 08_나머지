@@ -1,9 +1,0 @@
-# 08_나머지
-# Baekjoon_10430
-# 작성자 : 이지현
-
-a,b,c=map(int,input().split())
-print((a+b)%c)
-print(((a%c)+(b%c))%c)
-print((a*b)%c)
-print(((a%c)*(b%c))%c)
