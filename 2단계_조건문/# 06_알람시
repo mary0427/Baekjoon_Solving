@@ -1,0 +1,19 @@
+# 2525
+
+h1,m1 = map(int,input().split())
+cookMin = int(input()) 
+
+totalMin = 60*h1 + m1 + cookMin
+h2 = totalMin // 60
+m2 = totalMin % 60
+
+if h2<24 :
+    print(h2,m2)
+else:
+    print((h2-24),m2)
+
+
+# best
+A,B=map(int,input().split())
+C=int(input())
+print((A+((B+C)//60))%24,(B+C)%60)  ## 24로 나눈 나머지 쓰면 한줄에 끝남!!!
