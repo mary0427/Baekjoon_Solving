@@ -18,9 +18,9 @@ print("3421"[x>0::2][y>0])
 
     # open(0)
     여러 입력을 한 번에 받을 때 open(0).read() 같은 형식사용 가능
-        0	stdin   # 표준입력
-        1	stdout  # 표준출력
-        2	stderr  # 표준오류
+        0	stdin   # 표준입력. 키보드
+        1	stdout  # 표준출력. 쉘 실행한 콘솔, 터미널
+        2	stderr  # 표준오류. 쉘 실행한 콘솔, 터미널
     open(0).read() == sys.stdin.read()  # input()대신 빠른 입력을 받기 위해 사용.
     3단계 02 참고.
     기본값은 'r' 로 mode를 생략하면 자동으로 읽기모드. 
