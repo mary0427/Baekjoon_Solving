@@ -8,7 +8,7 @@ h2 = totalMin // 60
 m2 = totalMin % 60
 
 if h2<24 :
-    print(h2,m2)
+    print(h2,m2)       ## 그냥 print(h2%24, m2)가 더 간단함!!
 else:
     print((h2-24),m2)
 
