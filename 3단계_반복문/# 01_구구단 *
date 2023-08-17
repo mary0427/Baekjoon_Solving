@@ -14,5 +14,7 @@ S : 문자 (ex. 'python')
 f : 실수 (ex. 3.144545...)
 
 # 예시 : Print('%10s' % ('love'))
+
 https://funzozo.tistory.com/7 참고
+1단계 07번 메모(정렬, 길이 지정)참고
 '''
