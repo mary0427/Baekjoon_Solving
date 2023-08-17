@@ -4,18 +4,29 @@
 
 n=int(input())
 for i in range(n):
-    a,b=0,0
+    a,b=0,0      # **
     a,b=map(int,input().split())
     print(a+b)
 
 #best
-sum함수도 이용 sum(map(int,input().split()))
+    1.
+    sum함수도 이용 sum(map(int,input().split()))  
+      >> sum([a,b]) = a+b 
+      >> sum의 인자(매개변수)는 iterator(반복자)!! 여기선 리스트.
+    2.
+    import sys
+    input()              # 케이스수 입력받음
+    for i in sys.stdin:  # 반복문으로 케이스 입력받음
+        c = sum(map(int, i.split()))
+        print(c)
 
 # sys 모듈 
-: 파이썬 인터프리터를 제어하는데 사용되는 기본 모듈 중 하나.
+    input()보다 빠르게 입력을 받을 수 있는 함수. (특히 반복(여러줄) 입력 시!!)
+    sys: 파이썬 인터프리터가 제공하는 변수와 함수를 직접 제어할 수 있게 해주는 모듈
+    sys.stdin.readline()은 Prompt msg 인자를 줄 수 없음
+    sys.stdin.readline()은 개행 문자를 포함한 하나의 줄로 한 번에 읽어서 버퍼에 저장
+    sys.stdin.readline()의 기본 반환값은 str
+    >>> rstrip()이 적용되지 않은 함수이므로 "개행 문자(\n)"가 포함된 "문자열"이 반환됨
 
-import sys
-input()
-for i in sys.stdin:
-    c = sum(map(int, i.split()))
-    print(c)
+
+
