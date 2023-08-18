@@ -20,17 +20,17 @@ for i in range(n):
         c = sum(map(int, i.split()))
         print(c)
 
-# sys 모듈_sys.stdin.readline()
- input()보다 '빠르게' 입력을 받을 수 있는 함수. (특히 반복(여러줄) 입력 시!!)
+# sys.stdin.readline()
+  input()보다 '빠르게' 입력을 받을 수 있는 함수. (특히 반복(여러줄) 입력 시!!)
+  sys 모듈: System-specific parameters and functions.
+            파이썬 인터프리터가 제공하는 변수와 함수를 직접 제어할 수 있게 해주는 모듈.
 
-    sys: 파이썬 인터프리터가 제공하는 변수와 함수를 직접 제어할 수 있게 해주는 모듈
-    Prompt msg 인자를 줄 수 없음
-    한 줄 단위로 입력받기 때문에 개행 문자가 포함됨.
-    기본 반환값 타입은 str문자열 (input과 동일)
-
-      >> rstrip()이 적용되지 않은 함수이므로 "개행 문자(\n)"가 포함된 "문자열"이 반환됨.
-          >> .strip() 함수 >> 맨 앞.끝 공백제거 (rstrip 오른쪽ㅣlstrip 왼쪽, 매개변수로 특정 값 입력시 그 값제거)
-      >> input은 개행문자 삭제 후 반환(리턴)
-
-
-
+  ## sys.stdin.readline()의 특징  
+        (1) Prompt message 인자를 줄 수 없음. (input처럼 입력안내문구 프린트 불가)
+        (2) 한 줄 단위로 입력받기 때문에 개행 문자가 포함됨. (input은 개행문자 삭제 후 반환(리턴))
+            기본 반환값 타입은 str문자열 (input()도 동일.)
+              >> rstrip()이 적용되지 않은 함수이므로 "개행 문자(\n)"가 포함된 "문자열"이 반환됨.
+                  >> .strip() 함수 : 맨 앞.끝 공백제거 
+                    (rstrip 오른쪽ㅣlstrip 왼쪽, 매개변수로 특정 값 입력시 그 값제거)
+    
+    
