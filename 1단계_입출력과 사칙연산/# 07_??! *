@@ -3,9 +3,9 @@
 # 작성자 : 이지현
 
 d = input()
-print(f'{d}??!')
+print(f'{d}??!')   # fstring 이용!!
 
-# best
+# Or
 print(input()+"??!")
 
 # 참고 - 포맷함수 정렬, 길이지정 가능
