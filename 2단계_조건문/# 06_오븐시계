@@ -7,13 +7,14 @@ totalMin = 60*h1 + m1 + cookMin
 h2 = totalMin // 60
 m2 = totalMin % 60
 
-if h2<24 :
-    print(h2,m2)       ## 그냥 print(h2%24, m2)가 더 간단함!!
-else:
-    print((h2-24),m2)
+if h2<24 :             ㅣ
+    print(h2,m2)       ㅣ## 그냥 print(h2%24, m2)가 더 간단함!!
+else:                  ㅣ
+    print((h2-24),m2)  ㅣ
 
 
 # best
 A,B=map(int,input().split())
 C=int(input())
-print((A+((B+C)//60))%24,(B+C)%60)  ## 24로 나눈 나머지 쓰면 한줄에 끝남!!!
+print((A+((B+C)//60))%24,(B+C)%60)  ## 24로 나눈 나머지 쓰면 시(hour)계산 한줄에 끝남!!!
+
