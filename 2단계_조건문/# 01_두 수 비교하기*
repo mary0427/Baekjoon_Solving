@@ -7,3 +7,7 @@ elif a<b:
     print('<')
 else:
     print('==')
+
+# best
+a,b=map(int,input().split())
+print(['><'[a<b],'=='][a==b])
