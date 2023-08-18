@@ -13,3 +13,14 @@ if y%4 == 0 :
         print(1)
 else:
     print(0)
+
+# best
+and 와 or 의 사용. 100이나 400으로 나누어 떨어지는 수는 당연히 4로 나누어떨어짐.
+a = input()
+a = int(a)
+
+if (a%4 == 0) and (a%100 != 0) or (a%400 == 0):
+    print('1')
+else:
+    print('0')
+ 
