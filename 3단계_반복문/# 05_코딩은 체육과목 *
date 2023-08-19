@@ -1,0 +1,7 @@
+# 25314
+print('long '*(int(input())//4) +'int')
+
+# or
+print(int(input())//4*'long '+'int')
+  # 우선순위 동일한 연산자면 앞에서부터!!
+  # /(나머지)말고 //(몫)을 써야함!!(나머지 연산결과= float, 몫 연산결과= int)
