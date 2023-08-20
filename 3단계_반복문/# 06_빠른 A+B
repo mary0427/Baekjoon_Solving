@@ -1,3 +1,11 @@
-#
+# 15552
+n = int(input())
+
+import sys
+for i in range(n):
+    a,b = map(int,sys.stdin.readline().split())
+    print(a+b)
+
 # cf
 input() == sys.stdin.read() == open(0).read()
+sys는 꼭 import sys 해야함!!***
