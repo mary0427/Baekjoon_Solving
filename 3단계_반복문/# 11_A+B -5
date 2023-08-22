@@ -1,0 +1,21 @@
+# 10952
+import sys
+a,b = map(int,sys.stdin.readline().split())
+while not (a==0 and b ==0):
+	print(a+b)
+	a,b = map(int,sys.stdin.readline().split())
+
+# 순서 중요!!
+  a와 b가 0이라고 입력받은 후에 a,b가 0인지 판단하는 조건문이 적용되도록 배치해야함.
+입력문과 while 반복문의 순서, 
+입력문과 출력문의 순서
+
+# or 
+- while True문과 break의 사용
+
+import sys
+while True:
+  a, b = map(int, sys.stdin.readline().split())
+  if a == b == 0: 
+    break
+  print(a + b)
