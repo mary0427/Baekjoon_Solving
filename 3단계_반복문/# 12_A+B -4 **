@@ -7,18 +7,27 @@ while True:
         break
 
 # try except 구문**
+#
+EOF : 텍스트 파일의 끝을 만나게 되면 얻을 수 있는 값이다. 
+터미널 내에선 ctrl + z 를 누르고 엔터키를 누르면 된다. 
+  getchar() = -1
 
-# input만 써야하는 이유
+
+# input만 써야했던 이유
   파이썬에서 input()함수는 EOF를 만나면 EOFError를 발생시키지만, 
   sys.stdin.readline()은 에러를 발생시키지 않고 빈 문자열을 내놓음.
 
+# or
   sys.stdin.readline()으로 통과하고 싶다면,
     1) except ValueError:를 사용.
     2) except: 만 사용. (어떠한 에러가 일어날지 몰라 모든 에러처리 가능 
         >> sys.stdin.readline() = ''이기 때문에 a,b = map(int, ''.split())에서 ValueError가 발생.
            ''.split() = []이라서, a,b 두 변수에 할당할 수 없기 때문.
-#
-EOF : 텍스트 파일의 끝을 만나게 되면 얻을 수 있는 값이다. 
 
-터미널 내에선 ctrl + z 를 누르고 엔터키를 누르면 된다. 
-  getchar() = -1
+# or
+import sys
+lines = sys.stdin.readlines()
+for line in lines:
+    a,b = map(int, line.split())
+    print(a+b)
+
