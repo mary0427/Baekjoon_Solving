@@ -1,1 +1,7 @@
 # 10807
+import sys
+n = int(input())
+list = list(map(int,sys.stdin.readline().split()))
+print(list.count(int(input())))
+
+# map객체는 list함수로 감싸야 list타입이 된다!!
