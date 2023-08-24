@@ -1,0 +1,21 @@
+# 10871
+import sys
+n, x = map(int,sys.stdin.readline().split())
+listA = list(map(int,sys.stdin.readline().split()))
+for a in listA:
+    if a < x :
+        print(a,end=' ')
+
+
+# Best
+n, x = map(int, input().split())
+answer = ' '.join([i for i in input().split() if int(i) < x])
+print(answer, end='')
+
+input().split()리스트에서 x보다 작은 원소 int(i)를
+join함수를 통해 문자열 answer로 합침. (구분자 띄어쓰기 공백. ' ')
+
+
+#  join 함수
+'구분문자'.join(리스트)
+  파이썬 리스트를 문자열로 합쳐줌
