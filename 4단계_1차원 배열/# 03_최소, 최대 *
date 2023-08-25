@@ -1,0 +1,12 @@
+# 10818
+import sys
+n = int(input())
+list = list(map(int, sys.stdin.readline().split()))
+print(min(list),max(list))
+
+# Or
+ list = [int(s) for s in sys.stdin.read().split()]
+
+리스트명 = [함수(원소) for 원소 in 시퀀스]
+  시퀀스의 원소가 차례로 함수적용된 값으로 리스트의 원소로 들어감. (ex. s를 int(s)로 변환해 원소로 포함시킴)
+  함수 적용 안하거나 뒤에 조건문을 붙여 그 조건일때만 원소를 포함시키기도 함. ( ex. a<x 일때만 a를 원소로 포함)
