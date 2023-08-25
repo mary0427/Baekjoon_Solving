@@ -1,0 +1,12 @@
+# 2562
+import sys
+list = []
+for i in range(9):
+    list.append(int(sys.stdin.readline()))
+print(max(list))
+print(list.index(max(list))+1)
+
+# or
+list =[int(input()) for i in range(9)]
+
+# 인덱스는 정수, 리스트.index(위치알고싶은원소)
