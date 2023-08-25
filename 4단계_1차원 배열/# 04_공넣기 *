@@ -1,0 +1,33 @@
+# 10818
+import sys 
+n,m = map(int,sys.stdin.readline().split())
+
+basket = []
+for _ in range(n):
+    basket.append(0)              # 리스트 초기화 : basket = [0]*n 으로 가능!!
+
+for _ in range(m):
+    i,j,k=map(int,sys.stdin.readline().split())
+    for a in range(i-1,j):         ## for 문 안쓰기 가능! ; b[i-1:j]=[k]*(j-i+1)  
+        del(basket[a])                                                      
+        basket.insert(a,k)        # 원소 변경 : basket[a] = k 등식으로 가능!!     
+
+for k in basket:                 # 언패킹으로 가능 : print(*basket)
+        print(k,end=' ')
+
+# Best
+n,m,*a=map(int,open(0).read().split())
+b=[0]*n
+for x in range(m):
+  i,j,k=a[3*x:3*x+3]              # 입력을 read 한꺼번에 리스트a로 받은후 3개씩 인덱스로 불러냄.
+  b[i-1:j]=[k]*(j-i+1)
+print(*b)
+
+# list 메소드
+리스트.insert(위치,값)
+del(리스트[위치])
+
+# range 범위 다룰 때 조심!!
+range(from,to,간격)
+  from 포함, to 미포함!
+   이상      미만
