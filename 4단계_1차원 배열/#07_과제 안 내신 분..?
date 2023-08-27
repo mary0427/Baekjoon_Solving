@@ -1,0 +1,9 @@
+# 5597
+방법을 생각할 땐, 일반적 케이스보단 특이 케이스를 기준으로 생각하자! (반례방지)
+import sys
+student = [0]*30
+for i in range(28):
+    student[int(sys.stdin.readline())-1] = 1
+for i in range(30):
+    if student[i]==0:
+        print(i+1)
